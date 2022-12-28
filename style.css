@@ -1,4 +1,63 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
+<!DOCTYPE html>
+<head>
+    <title>Multi column article </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .article{
+            column-width:100px;
+            column-count: 4;
+            column-gap:40px;
+            column-rule-color:red;
+            column-rule-style: solid;
+            column-rule-width : 15px; 
+        }
+        h1{
+            column-span: all;
+        }
+        #share_button img{
+            width:10px;
+            height: 10px;
+            float: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <h1>This is spanning all columns</h1>
+        <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent eu efficitur tellus. Nam in nisi sed sapien lobortis sodales. Maecenas at eleifend turpis.
+Duis non maximus ligula. Nunc rutrum diam quis cursus interdum. Nulla viverra dolor et tellus
+consectetur, et congue enim blandit. Proin non sem dui. Integer porta cursus dolor sed laoreet.
+Pellentesque non turpis sit amet eros imperdiet suscipit. Sed quis efficitur ipsum, eu ornare
+tellus. Aliquam orci est, ultrices non cursus sit amet, placerat nec nisl. Nulla ligula est, viverra a
+nibh ac, accumsan bibendum lacus. Quisque ut sagittis lectus. Aliquam tincidunt in nunc eu
+hendrerit.Duis nulla enim, rutrum eget arcu vel, pharetra cursus lacus. Aliquam ultricies, ex nec
+iaculis congue, ante elit lacinia metus, eget congue lorem est eu risus. Pellentesque nec massa
+turpis. Fusce eu augue non lorem maximus commodo in quis mauris. Aenean id viverra nisi, id
+lacinia ligula. Nunc viverra dolor id turpis sollicitudin, eget cursus turpis tempor. 
+        </p>
+    </div>
+    <br>
+    
+    <div id="share_button">
+
+        <a href="https://www.whatsapp.com">
+            <i class="fa-brands fa-whatsapp"></i> 
+        </a>
+
+        <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://www.linkedin.com">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.twitter.com">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+       
+    </div>
+</body>
+</html>
